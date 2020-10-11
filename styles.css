@@ -1,0 +1,108 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background: #ffffff;
+}
+
+main
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	border: 1px solid #aaaaaa;
+}
+
+button
+{
+	line-height: 50px;
+	width: 50%;
+	float: left;
+	margin-bottom: 10px;
+	background: #dddddd;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+form
+{
+	padding: 1rem;
+	display: none;
+}
+
+u
+{
+	float: right;
+	cursor: pointer;
+	margin: 10px auto;
+}
+
+p
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.active
+{
+	display: block;
+	background: #f5f5f5;
+	color: #111111;
+}
+
+input[type="email"], input[type="password"]
+{
+	width: 100%;
+	padding: 10px;
+	margin: 10px auto;
+	border: 1px solid #cccccc;
+}
+
+input[type="checkbox"]
+{
+	margin: 10px auto;
+}
+
+input[type="submit"]
+{
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	background: #333333;
+	color: #ffffff;
+	margin: 10px auto;
+}
+
+u:hover
+{
+	color: #666666;
+}
+
+input[type="submit"]:hover
+{
+	background: #444444;
+}
+
+.reg > input:not(:placeholder-shown):invalid
+{
+	border: 1px solid red;
+}
+
+.reg > input:valid
+{
+	border: 1px solid green;
+}
